@@ -15,7 +15,7 @@ public class ProductManagement {
 
 
     @Bean
-    public RouteLocator defaultAssignmentServiceRoute(RouteLocatorBuilder builder) {
+    public RouteLocator defaultProductManagementServiceRoute(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(PRODUCT_SERVICE, p -> p.order(3)
                         .path("/")

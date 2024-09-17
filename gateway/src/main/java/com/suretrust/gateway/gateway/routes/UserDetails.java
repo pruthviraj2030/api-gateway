@@ -13,7 +13,7 @@ import static com.suretrust.gateway.gateway.utils.CommonUtil.getPrefixPath;
 public class UserDetails {
 
     @Bean
-    public RouteLocator defaultAssignmentServiceRoute(RouteLocatorBuilder builder) {
+    public RouteLocator defaultUserDetailsServiceRoute(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(USER_DETAILS, p -> p.order(3)
                         .path("/token",
